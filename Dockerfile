@@ -5,10 +5,10 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copia el archivo JAR al contenedor
-COPY target/mi-api-rest.jar app.jar
+COPY target/ejercicioAPI-0.0.1-SNAPSHOT.jar /app/ejercicioAPI-0.0.1-SNAPSHOT.jar
 
 # Expone el puerto
 EXPOSE 8080
 
 # Comando para ejecutar la aplicación
-CMD ["java", "-jar", "ejercicioAPI-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/app/ejercicioAPI-0.0.1-SNAPSHOT.jar"]
