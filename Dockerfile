@@ -11,4 +11,4 @@ COPY target/mi-api-rest.jar app.jar
 EXPOSE 8080
 
 # Comando para ejecutar la aplicación
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "ejercicioAPI-0.0.1-SNAPSHOT.jar"]
